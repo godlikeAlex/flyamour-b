@@ -75,6 +75,12 @@
         text-align: left;
         padding: 10px;
     }
+
+    
+    #logoFly
+    {
+        text-align: center;
+    }
 }
 
 @media (max-width:480px) { //phones
@@ -82,12 +88,21 @@
         margin-left: 120px;
     }
 
+    #logoFly
+    {
+        text-align: center;
+    }
 
 }
 
 @media (max-width:420px) { //phones
     .information_flight__full__circle-plane {
         margin-left: 45px
+    }
+
+    #logoFly
+    {
+        text-align: center;
     }
 
 }
