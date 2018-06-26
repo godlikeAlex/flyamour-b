@@ -1,4 +1,4 @@
-#Сборка Loftschool 
+#Сборка godlike
 
 Stack:
  - Gulp 4.0
