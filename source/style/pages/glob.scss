@@ -8,3 +8,19 @@ body
     background: url(../img/bg.jpg);
     background-size: cover;
 }
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    list-style: none;
+}
+
+select
+{
+    width: 200px;
+}

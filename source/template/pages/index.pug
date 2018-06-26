@@ -34,25 +34,25 @@ block content
           .information_flight__full
             .row
               .col-md-3.col-sm-12.information_flight__full__main-info
-                p Рейс: FV:6972
-                P Самолёт: Boeing 319
-                p Класс: Economy
-                p Багаж: 1PC
+                div Рейс: FV:6972
+                div Самолёт: Boeing 319
+                div Класс: Economy
+                div Багаж: 1PC
               .col-md-3.col-sm-12.information_flight__full__some-info
-                p Вылета: 04:50
-                P 2018-04-19
-                p Четверг
-                p Tashkent TAS
+                div Вылета: 04:50
+                div 2018-04-19
+                div Четверг
+                div Tashkent TAS
               .col-md-3.information_flight__full__plane-time
                 | Итого 15 ч 10м
                 div.information_flight__full__circle-plane
                   <i class="fas fa-circle"></i>
                   <i class="fas fa-plane"></i>  
               .col-md-3.information_flight__full__end_flight
-                p Прибытие 16:00,
-                P 2018-04-19
-                p Четверг
-                p London LGW
+                div Прибытие 16:00,
+                div 2018-04-19
+                div Четверг
+                div London LGW
         .col-md-3.ml-auto
           div
             img(src="http://toplogos.ru/images/logo-uzbekistan-airways.png", alt="")
@@ -62,25 +62,25 @@ block content
           .information_flight__full
             .row
               .col-md-3.col-sm-12.information_flight__full__main-info
-                p Рейс: FV:6972
-                P Самолёт: Boeing 319
-                p Класс: Economy
-                p Багаж: 1PC
+                div Рейс: FV:6972
+                div Самолёт: Boeing 319
+                div Класс: Economy
+                div Багаж: 1PC
               .col-md-3.col-sm-12.information_flight__full__some-info
-                p Вылета: 04:50
-                P 2018-04-19
-                p Четверг
-                p Tashkent TAS
+                div Вылета: 04:50
+                div 2018-04-19
+                div Четверг
+                div Tashkent TAS
               .col-md-3.information_flight__full__plane-time
                 | Итого 15 ч 10м
                 div.information_flight__full__circle-plane
                   <i class="fas fa-circle"></i>
                   <i class="fas fa-plane"></i>  
               .col-md-3.information_flight__full__end_flight
-                p Прибытие 16:00,
-                P 2018-04-19
-                p Четверг
-                p London LGW
+                div Прибытие 16:00,
+                div 2018-04-19
+                div Четверг
+                div London LGW
     section
     .container.main-cont 
       .row      
@@ -94,6 +94,7 @@ block content
                       p Отчество
                       p Дата рождения
                       p Тип документа
+                      p Годен до
                     .col-6.col-lg-3
                       input(type="text" name="name" class="form__input")
                       input(type="text" name="name" class="form__input")
@@ -105,11 +106,15 @@ block content
 
                       select(class="form__select")
                         option(value="Паспорт" ) Паспорт
+                      div.date_conteiner
+                        input(type="text" name="name" class="form__input date_input" value="ДД")
+                        input(type="text" name="name" class="form__input date_input" value="ММ")
+                        input(type="text" name="name" class="form__input date_input" value="ГГГГ")  
                     .col-6.col-lg-3
                       p Имя
                       p Пол
-                      p Дата рождения
                       p Тип документа
+                      p Номер документа
                     .col-6.col-lg-3
                       input(type="text" name="name" class="form__input")
                       div.radio-but
@@ -121,13 +126,9 @@ block content
                           <input type="radio" id="radiob" name="radio" value="radio-value">
                           <span class="input-control__indicator"></span> Женщина
                         </label>
-                      div.date_conteiner
-                        input(type="text" name="name" class="form__input date_input" value="ДД")
-                        input(type="text" name="name" class="form__input date_input" value="ММ")
-                        input(type="text" name="name" class="form__input date_input" value="ГГГГ")
-                        
-                      select(class="form__select")
-                        option(value="Паспорт" ) Паспорт                                                 
+                        select(class="form__select")
+                          option(value="Uzbekistan" ) Uzbekistan     
+                        input(type="text" name="name" class="form__input")                                              
       div.order
           .row
             .col-md-5
