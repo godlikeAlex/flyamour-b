@@ -15,7 +15,7 @@
     text-transform: uppercase ;
 }
 
-.information_flight
+.information_flight-main
 {
     background: white;
     padding: 0;
@@ -25,6 +25,22 @@
     box-shadow: 3px 5px 5px -2px rgba(0,0,0,0.47);
     
 }
+
+.information_flight
+{
+    background: white;
+    padding: 0;
+    -webkit-box-shadow: 3px 5px 5px -2px rgba(0,0,0,0.47);
+    -moz-box-shadow: 3px 5px 5px -2px rgba(0,0,0,0.47);
+    box-shadow: 3px 5px 5px -2px rgba(0,0,0,0.47);
+    
+}
+
+.details__logo
+{
+    margin-top: 55px;
+}
+
 
 .information_flight__name
 {
@@ -36,9 +52,16 @@
 
 .information_flight__full
 {
-    padding-top: 36px;
+    padding-top: 30px;
     padding-left: 20px;
-    padding-bottom: 49px;
+    padding-bottom: 35px;
+}
+
+#logoFly
+{
+    height: 55px;
+    float: right;
+    width: 168px;
 }
 
 .information_flight__full__some-info
