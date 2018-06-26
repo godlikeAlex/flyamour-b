@@ -1,0 +1,93 @@
+@media (max-width:1900px) { //desktop
+
+}
+
+@media (max-width:1200px) { //desktop
+    .information_flight__full__circle-plane {
+        margin-left: 25px;
+        &:before {
+            width: 130px;
+        }
+    }    
+    .fa-plane
+    {
+        left: 140px;
+    }
+}
+
+@media (max-width:992px) { //laptop
+    .information_flight__full__circle-plane {
+        margin-left: -6px;
+        &:before {
+            width: 130px;
+        }
+    }    
+    .fa-plane
+    {
+        left: 140px;
+    }
+}
+
+@media (max-width:768px) { //tablets
+    .information_flight__full__circle-plane {
+        margin-left: -6px;
+        &:before {
+            width: 130px;
+        }
+    }    
+    .fa-plane
+    {
+        left: 140px;
+    }
+    
+    .information_flight__full__main-info
+    {
+        text-align: center;
+    }
+
+    .information_flight__full__some-info
+    {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .information_flight__full__end_flight
+    {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .information_flight__full__circle-plane {
+        margin-left: 155px;
+    }
+
+    .information_flight__full__plane-time {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .form_container
+    {
+        padding-left: 5px;
+    }
+    .price
+    {
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+@media (max-width:480px) { //phones
+    .information_flight__full__circle-plane {
+        margin-left: 120px;
+    }
+
+
+}
+
+@media (max-width:420px) { //phones
+    .information_flight__full__circle-plane {
+        margin-left: 45px
+    }
+
+}

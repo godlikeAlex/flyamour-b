@@ -1,0 +1,87 @@
+.main-cont
+{
+    margin-top: 35px;
+    background: #e6ebee;
+    padding: 32px;
+    border-radius: 10px
+}
+
+.details__main_info-block
+{
+    background: #ff5b5a;
+    color: white;
+    font-weight: 700;
+    padding: 16px 0px 14px 20px;
+    text-transform: uppercase ;
+}
+
+.information_flight
+{
+    background: white;
+    padding: 0;
+    margin-top: 30px;
+    -webkit-box-shadow: 3px 5px 5px -2px rgba(0,0,0,0.47);
+    -moz-box-shadow: 3px 5px 5px -2px rgba(0,0,0,0.47);
+    box-shadow: 3px 5px 5px -2px rgba(0,0,0,0.47);
+    
+}
+
+.information_flight__name
+{
+    background: #2cb3c6;
+    color: white;
+    padding: 16px 0px 14px 20px;
+    font-weight: 700;
+}
+
+.information_flight__full
+{
+    padding-top: 36px;
+    padding-left: 20px;
+    padding-bottom: 49px;
+}
+
+.information_flight__full__some-info
+{
+    padding-left: 31px;
+}
+
+.information_flight__full__plane-time
+{
+    text-align: center;
+}
+
+.information_flight__full__circle-plane
+{
+    color: #2cb3c6;
+    position: relative;
+    margin-left: 20px;
+    &:before{
+        position: absolute;
+        content: '';
+        background: #2cb3c6;
+        width: 170px;
+        height: 2px;
+        top: 11px;
+        left: 11px;
+    }
+}
+
+.information_flight__full__plane-time
+{
+   padding-top: 50px;
+}
+
+.fa-circle
+{
+    position: absolute;
+    top: 4px;
+    left: -10px;
+}
+
+.fa-plane
+{
+    position: absolute;
+    left: 185px;
+    top: 3px;
+}

@@ -1,0 +1,240 @@
+$color1: #f4f4f4;
+$color2: #3197EE;
+
+
+.form_container
+{
+    background: white;
+    margin-top: 30px;
+    padding-left: 71px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form__input, .form__select
+{
+    margin-top: 10px;
+    border: 1px solid #c8d6d9;
+    border-radius: 4px;
+    &:nth-child(1){
+        margin-top: 0px;
+    }
+}
+
+.date_input
+{
+    width: 40px;
+    position: relative;
+    text-align: center;
+    color: #c8d6d9;
+
+    &:nth-child(1)
+    {
+        border-radius: 4px 0 0 4px;
+    }
+    &:nth-child(2)
+    {
+        left: -5px;
+        border-radius: 0;
+    }
+
+    &:nth-child(3)
+    {
+        left: -10px;
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+  
+.rights__items
+{
+    list-style-type: disc;
+    color: #19b6c7;
+    
+    span{
+        color: #f94f58;
+    }
+}
+
+.rights
+{
+    margin-left: 25px;
+}
+
+.price
+{
+    text-align: right;
+    font-size: 22px;
+    font-weight: 700;
+    span{
+        color: #19b6c7;
+        margin-left: 10px;
+    }
+}
+
+.order
+{
+    margin-top: 45px;
+}
+
+.price__button-order
+{
+    width: 480px;
+    text-align: center;
+    border: none;
+    background: #ed594d;
+    height: 60px;
+    color: white;
+    font-weight: 700;
+    margin: auto;
+    font-size: 18px;
+}
+
+.radio-but
+{
+    padding-top: 10px;
+}
+
+.button-price-flex
+{
+    display: flex;
+}
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 22px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+    height: 16px;
+    width: 16px;
+    
+    border: 1px solid;
+    left: 0px;
+    
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+    top: 3px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    
+    transform: rotate(-45deg);
+    
+    left: 4px;
+    top: 7px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+
+
+$input-radius: 80% !default;
+$input-unit: 24px !default; // accepts px, em, rem
+$input-spacing: $input-unit * 1.125 !default; // adjust depending on font-family
+$input-font: "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
+
+$radio-bg: white !default;
+$radio-txt-color: #AACCFF !default;
+
+$radio-checked-custom: (
+  background: #2eafc4
+) !default;
+$radio-checked: #222233 !default;
+$radio-checked-focus: white !default;
+
+.input-control {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: $input-spacing * 1.25;
+  position: relative;
+  font-family: $input-font;
+  font-weight: 100;
+  line-height: $input-spacing;
+
+  input {
+    position: absolute;
+    width: auto !important;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  &__indicator {
+    border-radius: $input-radius;
+    display: block;
+    height: $input-unit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #2eafc4;
+    background-size: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+}
+
+
+.input-control.radio {
+
+  input:focus ~ .input-control__indicator,
+  input:active ~ .input-control__indicator {
+    @each $key, $value in $radio-checked-custom {
+      #{$key} : #{$value};
+    }
+  }
+
+  input:checked ~ .input-control__indicator {
+    &:after {
+      border-radius: $input-radius;
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scale(.5);
+      transform-origin: center center;
+      width: 100%;
+      background: $radio-checked-focus;
+    }
+  }
+}
