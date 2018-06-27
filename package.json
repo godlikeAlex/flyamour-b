@@ -4,7 +4,7 @@
   "author": "krabaton",
   "license": "ISC",
   "scripts": {
-    "start": "set NODE_ENV=development&& gulp",
+    "start": "gulp",
     "build": "set NODE_ENV=production&& gulp build"
   },
   "devDependencies": {
